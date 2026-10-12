@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Hagah · 圣经默想与研究</title>
+<meta name="description" content="Hagah 是一款新教圣经默想应用，集圣经正文、经文注释、默想计划、关联经文与原文、属灵书籍与讲道集于一体。无论在手机还是 PC 上，都能无缝继续您的灵修阅读。">
+<link rel="icon" href="../a/icon.png">
+<script>(function(){var k='hagah_theme',t;try{t=localStorage.getItem(k)}catch(e){}if(!t)t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+:root{--bg:#f6f1e7;--panel:#fffdf8;--ink:#2b2a27;--dim:#6b665c;--accent:#7a4e2d;--line:#e2d8c6;--hero:#efe5d3;--frame:#3a3530}
+:root[data-theme=dark]{--bg:#1b1916;--panel:#25221e;--ink:#ece6d9;--dim:#b4ab99;--accent:#d8a874;--line:#3a352e;--hero:#221f1b;--frame:#0e0d0c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);line-height:1.8;font-size:17px;word-break:keep-all;
+font-family:"Noto Serif KR","Batang","바탕","Noto Serif",Georgia,serif;transition:background .2s,color .2s}
+a{color:var(--accent)}.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;align-items:center;gap:12px;height:62px}
+.mode{background:none;border:1px solid var(--line);color:var(--ink);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:16px;line-height:1}
+header img{width:30px;height:30px;border-radius:7px}.brand{font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;white-space:nowrap}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--dim);text-decoration:none;font-size:15px}nav a:hover{color:var(--accent)}
+.lang{position:relative;font-size:15px}.lang summary{cursor:pointer;list-style:none;border:1px solid var(--line);padding:4px 12px;border-radius:4px;color:var(--ink)}
+.lang summary::-webkit-details-marker{display:none}
+.lang ul{position:absolute;right:0;top:36px;margin:0;padding:6px 0;list-style:none;background:var(--panel);border:1px solid var(--line);min-width:150px;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.lang li a{display:block;padding:6px 16px;color:var(--ink);text-decoration:none}.lang li a:hover,.lang li a.on{color:var(--accent)}
+.hero{background:var(--hero);padding:76px 0 64px;text-align:center}.hero .wrap{max-width:780px}
+.hero h1{font-size:40px;line-height:1.35;margin:0 0 18px;letter-spacing:-.01em}.hero p{color:var(--dim);font-size:18px;margin:0 0 28px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 30px;text-decoration:none;font-weight:700;border-radius:2px;border:0;font:inherit}
+:root[data-theme=dark] .btn{color:#1b1916}
+.verse{margin:38px auto 0;max-width:640px;padding:22px 26px;background:var(--panel);border-left:4px solid var(--accent);text-align:left}
+.verse b{display:block;font-size:13px;color:var(--dim);font-weight:600;margin-bottom:6px}.verse q{font-size:19px}
+.verse cite{display:block;margin-top:8px;color:var(--dim);font-style:normal;font-size:14px}
+section{padding:68px 0}section h2{font-size:28px;margin:0 0 14px;text-align:center}.lead{color:var(--dim);text-align:center;max-width:720px;margin:0 auto 34px}
+.name{max-width:760px;margin:auto}.name .heb{text-align:center;font-size:30px;color:var(--accent);margin:0 0 18px;direction:rtl;font-family:"SBL Hebrew","Ezra SIL","Times New Roman",serif}
+.name p{margin:0 0 14px}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.stat{text-align:center;padding:18px 8px;background:var(--panel);border:1px solid var(--line);border-radius:4px}
+.stat b{display:block;font-size:26px;color:var(--accent)}.stat span{color:var(--dim);font-size:14px}
+.sync{display:grid;grid-template-columns:1fr 1fr;gap:22px}.sync .card{padding:26px}
+.sync .link{grid-column:1/3;text-align:center;border-style:dashed}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:24px}.card h3{margin:0 0 8px;font-size:20px}.card p{margin:0;color:var(--dim)}
+.set{display:grid;grid-template-columns:250px 200px 1fr;gap:30px;align-items:center;padding:34px 0;border-top:1px solid var(--line)}
+.set h3{font-size:23px;margin:0 0 10px}.set p{color:var(--dim);margin:0}.set .nopc{grid-column:3}
+.set figure{margin:0;text-align:center}.set figcaption{color:var(--dim);font-size:13px;margin-top:6px}
+.shots figure{margin:0;text-align:center}.shots figcaption{color:var(--dim);font-size:13px;margin-top:6px}
+img.m{width:200px;border-radius:18px;border:6px solid var(--frame);display:block}
+img.p{width:100%;max-width:560px;border-radius:6px;border:1px solid var(--line);display:block;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.gal input{display:none}.tabs{text-align:center;margin-bottom:22px}
+.tabs label{display:inline-block;padding:7px 26px;border:1px solid var(--line);cursor:pointer;color:var(--dim);margin:0 -1px}
+#gm:checked~.tabs label[for=gm],#gp:checked~.tabs label[for=gp]{background:var(--accent);color:#fff;border-color:var(--accent)}
+.strip{display:none;gap:18px;overflow-x:auto;padding-bottom:12px}
+#gm:checked~.sm,#gp:checked~.sp{display:flex}.strip figure{margin:0;flex:0 0 auto}.sp img.p{width:620px;max-width:none}
+.get{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:center}.get b{display:block;font-size:20px}.soon{color:var(--dim)}
+form{max-width:620px;margin:auto;display:grid;gap:14px}label.f{font-size:14px;color:var(--dim)}
+input.f,textarea{width:100%;padding:12px;font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:4px}textarea{min-height:140px}
+.hp{position:absolute;left:-9999px}.note{color:var(--dim);font-size:14px;text-align:center}
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--dim);font-size:14px}footer h3{color:var(--ink);font-size:15px;margin:0 0 6px}
+@media(max-width:860px){nav{display:none}.hero h1{font-size:30px}.stats{grid-template-columns:repeat(2,1fr)}
+.sync,.get{grid-template-columns:1fr}.sync .link{grid-column:auto}
+.set{grid-template-columns:1fr}.set figure{justify-self:center}img.m{width:170px}}
+</style></head><body>
+<header><div class="wrap"><button class="mode" type="button" title="深色模式" aria-label="深色模式" onclick="var r=document.documentElement,t=r.getAttribute('data-theme')=='dark'?'light':'dark';r.setAttribute('data-theme',t);try{localStorage.setItem('hagah_theme',t)}catch(e){}">&#9680;</button>
+<img src="../a/icon.png" alt=""><a class="brand" href="#top">Hagah</a>
+<nav><a href="#name">名字的故事</a><a href="#sync">手机与电脑</a><a href="#feat">功能</a><a href="#shots">截图</a><a href="#get">下载应用</a><a href="#ask">咨询</a></nav>
+<details class="lang"><summary>中文(简体) &#9662;</summary><ul><li><a href="../en/">English</a></li><li><a href="../">한국어</a></li><li><a href="../zh/" class="on">中文(简体)</a></li><li><a href="../zht/">中文(繁體)</a></li><li><a href="../ja/">日本語</a></li><li><a href="../de/">Deutsch</a></li><li><a href="../fr/">Français</a></li><li><a href="../es/">Español</a></li><li><a href="../ar/">العربية</a></li><li><a href="../ru/">Русский</a></li><li><a href="../pt/">Português</a></li></ul></details></div></header>
+<div class="hero" id="top"><div class="wrap"><h1>读经、默想、互相关联</h1><p>Hagah 是一款新教圣经默想应用，集圣经正文、经文注释、默想计划、关联经文与原文、属灵书籍与讲道集于一体。无论在手机还是 PC 上，都能无缝继续您的灵修阅读。</p>
+<a class="btn" href="#get">下载应用</a>
+<div class="verse"><b>今日默想经文</b><q>你的话是我脚前的灯， 是我路上的光。</q><cite>诗篇 119:105</cite></div></div></div>
+<section id="name"><div class="wrap name"><h2>“Hagah”这个名字</h2><p class="heb">&#1492;&#1464;&#1490;&#1464;&#1492; &#183; &#1491;&#1468;&#1464;&#1489;&#1464;&#1512;</p>
+<p>Hagah 在希伯来语中意为「出声低回、轻声呢喃」。诗篇第一篇中的「昼夜思想」里的「思想」正是这个词。同一个词也被用于形容狮子抓住猎物时发出低沉的咆哮（赛 31:4）以及鸽子的咕咕叫声（赛 38:14）。</p><p>圣经所说的默想不仅停留在脑海中的思考，更是将话语放在口中反复低回、铭刻于心。</p><p>Dabar 意为「话语」。它既指神所说的话，也同时指那话语所成就的事情。</p><p>因此，Hagah 代表「呢喃神的话语」。我们开发这款应用的初衷，是希望您在忙碌的日常中也能将一句经文放在口中反覆思想，并在有空时能深入挖掘神的话语。</p></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="stats"><div class="stat"><b>13,875</b><span>经文解析</span></div><div class="stat"><b>156</b><span>灵修计划</span></div><div class="stat"><b>47</b><span>透镜默想</span></div><div class="stat"><b>40</b><span>古典名著·讲道集</span></div><div class="stat"><b>23</b><span>圣经译本</span></div></div></div></section>
+<section id="sync"><div class="wrap"><h2>手机与电脑，合一的灵修</h2><p class="lead">两端应用紧密相连。在途中用手机开始的灵修，回家后可在电脑上深入继续。</p>
+<div class="sync"><div class="card"><h3>途中使用手机</h3><p>在上下班途中或休息时间阅读今日经文与灵修计划，并将闪现的灵感记录为简短的灵修笔记。讲道、祷告、赞美视频也能从暂停处继续收听。</p></div>
+<div class="card"><h3>在家用电脑深度灵修</h3><p>在大屏幕上并排展开经文关联、圣经脉络、注释与原文、古典名著，将手机中留下的笔记润色并扩展为研究笔记。</p></div>
+<div class="card link"><h3>&#8644; 在同一Wi-Fi下相互连接</h3><p>手机上编写的笔记、收藏以及计划进度会同步到电脑，电脑上整理的资料也会传回手机。数据仅在家庭Wi-Fi下由两台设备直接传输，不上传至网络服务器。</p></div></div></div></section>
+<section id="feat"><div class="wrap"><h2>功能介绍</h2><div class="set"><div class="txt"><h3>逐节浅显注释</h3><p>点击经文即可打开注释、默想问题与默想祷告。还可在同一界面查看章与段落的脉络。</p></div><figure><img class="m" src="../a/m/04_sheet_desc.png" alt="移动端" loading="lazy"><figcaption>移动端</figcaption></figure><figure><img class="p" src="../a/pc/pc_desc.png" alt="电脑" loading="lazy"><figcaption>电脑</figcaption></figure></div><div class="set"><div class="txt"><h3>意脉相连的经文</h3><p>展示单节经文与全圣经哪处经文相连、为何相连的详细说明。跟随话语的脉络，从创世记走到启示录。</p></div><figure><img class="m" src="../a/m/05_sheet_links.png" alt="移动端" loading="lazy"><figcaption>移动端</figcaption></figure><figure><img class="p" src="../a/pc/pc_flow.png" alt="电脑" loading="lazy"><figcaption>电脑</figcaption></figure></div><div class="set"><div class="txt"><h3>注释与原文</h3><p>将多部古典注释以现代语言呈现，并可查考希伯来语和希腊语词汇在圣经各处出现的出处。</p></div><figure><img class="m" src="../a/m/06e_sheet_lex.png" alt="移动端" loading="lazy"><figcaption>移动端</figcaption></figure><figure><img class="p" src="../a/pc/pc_comm.png" alt="电脑" loading="lazy"><figcaption>电脑</figcaption></figure></div><div class="set"><div class="txt"><h3>默想计划与多维透镜</h3><p>从通读到主题默想，为您设定每日份量，引导您从多个角度深入默想同一主题。</p></div><figure><img class="m" src="../a/m/13_plan_today_card.png" alt="移动端" loading="lazy"><figcaption>移动端</figcaption></figure></div><div class="set"><div class="txt"><h3>属灵经典与讲道集</h3><p>将司布真、慕安德烈、博尔斯等属灵经典以现代语言重新呈现。</p></div><figure><img class="m" src="../a/m/17_reader.png" alt="移动端" loading="lazy"><figcaption>移动端</figcaption></figure><figure><img class="p" src="../a/pc/pc_reading.png" alt="电脑" loading="lazy"><figcaption>电脑</figcaption></figure></div><div class="set"><div class="txt"><h3>讲道·祷告·赞美视频</h3><p>按语种选择聆听与经文相关的讲道、祷告和赞美，并支持从中断处继续播放。</p></div><figure><img class="m" src="../a/m/25_youtube.png" alt="移动端" loading="lazy"><figcaption>移动端</figcaption></figure></div><div class="set"><div class="txt"><h3>AI 助手</h3><p>向您选择的 AI 询问经文，将多方回答整理成文并保存在您的研究笔记中。</p></div><figure><img class="m" src="../a/m/22c_ai_final.png" alt="移动端" loading="lazy"><figcaption>移动端</figcaption></figure><figure><img class="p" src="../a/pc/pc_ai.png" alt="电脑" loading="lazy"><figcaption>电脑</figcaption></figure></div></div></section>
+<section id="shots"><div class="wrap gal"><h2>界面预览</h2>
+<input type="radio" name="g" id="gm" checked><input type="radio" name="g" id="gp">
+<div class="tabs"><label for="gm">移动端</label><label for="gp">电脑</label></div>
+<div class="strip sm"><figure><img class="m" src="../a/m/01_home.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/04_sheet_desc.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/05_sheet_links.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/06e_sheet_lex.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/14_lens_page.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/17_reader.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/25c_youtube_prayer.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/22c_ai_final.png" alt="" loading="lazy"><figcaption></figcaption></figure></div><div class="strip sp"><figure><img class="p" src="../a/pc/pc_desc.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="../a/pc/pc_flow.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="../a/pc/pc_comm.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="../a/pc/pc_reading.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="../a/pc/pc_ai.png" alt="" loading="lazy"><figcaption></figcaption></figure></div></div></section>
+<section id="get"><div class="wrap"><h2>下载应用</h2><div class="get"><div class="card"><b>安卓</b><span class="soon">敬请期待</span></div><div class="card"><b>苹果</b><span class="soon">敬请期待</span></div><div class="card"><b>Windows PC</b><span class="soon">敬请期待</span></div></div><p class="note">应用上线后可在此处下载。</p></div></section>
+<section id="ask"><div class="wrap"><h2>联系我们</h2><p class="lead">欢迎发送您在使用应用时的疑问或建议。我们将通过您填写的邮箱进行回复。</p>
+<form onsubmit="return false"><label class="f">接收回复的邮箱<input class="f" type="email" name="email" required></label>
+<label class="f">咨询内容<textarea name="body" required></textarea></label>
+<input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn" type="submit" disabled>发送</button><p class="note">意见提交功能即将上线，目前暂不支持发送。</p></form></div></section>
+<footer><div class="wrap"><h3>隐私政策</h3><p>本网站及应用不收集任何访问记录。不使用分析工具、广告追踪及外部字体。您发送咨询时填写的邮箱与内容仅用于回复，予以保留。</p><p>Hagah · 圣经正文版权归各译本版权所有者所有。</p></div></footer>
+</body></html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Hagah Dabar · Bibelmeditation und -studium</title>
+<meta name="description" content="Hagah Dabar ist eine protestantische Bibelmeditations-App, die Bibeltexte, Versauslegungen, Meditationspläne, Querverweise, Ursprachen, Bücher und Predigten an einem Ort vereint. Lesen Sie dasselbe Wort nahtlos auf dem Smartphone und dem PC.">
+<link rel="icon" href="../a/icon.png">
+<script>(function(){var k='hagah_theme',t;try{t=localStorage.getItem(k)}catch(e){}if(!t)t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+:root{--bg:#f6f1e7;--panel:#fffdf8;--ink:#2b2a27;--dim:#6b665c;--accent:#7a4e2d;--line:#e2d8c6;--hero:#efe5d3;--frame:#3a3530}
+:root[data-theme=dark]{--bg:#1b1916;--panel:#25221e;--ink:#ece6d9;--dim:#b4ab99;--accent:#d8a874;--line:#3a352e;--hero:#221f1b;--frame:#0e0d0c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);line-height:1.8;font-size:17px;word-break:keep-all;
+font-family:"Noto Serif KR","Batang","바탕","Noto Serif",Georgia,serif;transition:background .2s,color .2s}
+a{color:var(--accent)}.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;align-items:center;gap:12px;height:62px}
+.mode{background:none;border:1px solid var(--line);color:var(--ink);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:16px;line-height:1}
+header img{width:30px;height:30px;border-radius:7px}.brand{font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;white-space:nowrap}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--dim);text-decoration:none;font-size:15px}nav a:hover{color:var(--accent)}
+.lang{position:relative;font-size:15px}.lang summary{cursor:pointer;list-style:none;border:1px solid var(--line);padding:4px 12px;border-radius:4px;color:var(--ink)}
+.lang summary::-webkit-details-marker{display:none}
+.lang ul{position:absolute;right:0;top:36px;margin:0;padding:6px 0;list-style:none;background:var(--panel);border:1px solid var(--line);min-width:150px;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.lang li a{display:block;padding:6px 16px;color:var(--ink);text-decoration:none}.lang li a:hover,.lang li a.on{color:var(--accent)}
+.hero{background:var(--hero);padding:76px 0 64px;text-align:center}.hero .wrap{max-width:780px}
+.hero h1{font-size:40px;line-height:1.35;margin:0 0 18px;letter-spacing:-.01em}.hero p{color:var(--dim);font-size:18px;margin:0 0 28px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 30px;text-decoration:none;font-weight:700;border-radius:2px;border:0;font:inherit}
+:root[data-theme=dark] .btn{color:#1b1916}
+.verse{margin:38px auto 0;max-width:640px;padding:22px 26px;background:var(--panel);border-left:4px solid var(--accent);text-align:left}
+.verse b{display:block;font-size:13px;color:var(--dim);font-weight:600;margin-bottom:6px}.verse q{font-size:19px}
+.verse cite{display:block;margin-top:8px;color:var(--dim);font-style:normal;font-size:14px}
+section{padding:68px 0}section h2{font-size:28px;margin:0 0 14px;text-align:center}.lead{color:var(--dim);text-align:center;max-width:720px;margin:0 auto 34px}
+.name{max-width:760px;margin:auto}.name .heb{text-align:center;font-size:30px;color:var(--accent);margin:0 0 18px;direction:rtl;font-family:"SBL Hebrew","Ezra SIL","Times New Roman",serif}
+.name p{margin:0 0 14px}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.stat{text-align:center;padding:18px 8px;background:var(--panel);border:1px solid var(--line);border-radius:4px}
+.stat b{display:block;font-size:26px;color:var(--accent)}.stat span{color:var(--dim);font-size:14px}
+.sync{display:grid;grid-template-columns:1fr 1fr;gap:22px}.sync .card{padding:26px}
+.sync .link{grid-column:1/3;text-align:center;border-style:dashed}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:24px}.card h3{margin:0 0 8px;font-size:20px}.card p{margin:0;color:var(--dim)}
+.set{display:grid;grid-template-columns:250px 200px 1fr;gap:30px;align-items:center;padding:34px 0;border-top:1px solid var(--line)}
+.set h3{font-size:23px;margin:0 0 10px}.set p{color:var(--dim);margin:0}.set .nopc{grid-column:3}
+.set figure{margin:0;text-align:center}.set figcaption{color:var(--dim);font-size:13px;margin-top:6px}
+.shots figure{margin:0;text-align:center}.shots figcaption{color:var(--dim);font-size:13px;margin-top:6px}
+img.m{width:200px;border-radius:18px;border:6px solid var(--frame);display:block}
+img.p{width:100%;max-width:560px;border-radius:6px;border:1px solid var(--line);display:block;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.gal input{display:none}.tabs{text-align:center;margin-bottom:22px}
+.tabs label{display:inline-block;padding:7px 26px;border:1px solid var(--line);cursor:pointer;color:var(--dim);margin:0 -1px}
+#gm:checked~.tabs label[for=gm],#gp:checked~.tabs label[for=gp]{background:var(--accent);color:#fff;border-color:var(--accent)}
+.strip{display:none;gap:18px;overflow-x:auto;padding-bottom:12px}
+#gm:checked~.sm,#gp:checked~.sp{display:flex}.strip figure{margin:0;flex:0 0 auto}.sp img.p{width:620px;max-width:none}
+.get{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:center}.get b{display:block;font-size:20px}.soon{color:var(--dim)}
+form{max-width:620px;margin:auto;display:grid;gap:14px}label.f{font-size:14px;color:var(--dim)}
+input.f,textarea{width:100%;padding:12px;font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:4px}textarea{min-height:140px}
+.hp{position:absolute;left:-9999px}.note{color:var(--dim);font-size:14px;text-align:center}
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--dim);font-size:14px}footer h3{color:var(--ink);font-size:15px;margin:0 0 6px}
+@media(max-width:860px){nav{display:none}.hero h1{font-size:30px}.stats{grid-template-columns:repeat(2,1fr)}
+.sync,.get{grid-template-columns:1fr}.sync .link{grid-column:auto}
+.set{grid-template-columns:1fr}.set figure{justify-self:center}img.m{width:170px}}
+</style></head><body>
+<header><div class="wrap"><button class="mode" type="button" title="Dunkler Modus" aria-label="Dunkler Modus" onclick="var r=document.documentElement,t=r.getAttribute('data-theme')=='dark'?'light':'dark';r.setAttribute('data-theme',t);try{localStorage.setItem('hagah_theme',t)}catch(e){}">&#9680;</button>
+<img src="../a/icon.png" alt=""><a class="brand" href="#top">Hagah Dabar</a>
+<nav><a href="#name">Der Name</a><a href="#sync">Smartphone &amp; PC</a><a href="#feat">Funktionen</a><a href="#shots">Screenshots</a><a href="#get">App herunterladen</a><a href="#ask">Kontakt</a></nav>
+<details class="lang"><summary>Deutsch &#9662;</summary><ul><li><a href="../en/">English</a></li><li><a href="../">한국어</a></li><li><a href="../zh/">中文(简体)</a></li><li><a href="../zht/">中文(繁體)</a></li><li><a href="../ja/">日本語</a></li><li><a href="../de/" class="on">Deutsch</a></li><li><a href="../fr/">Français</a></li><li><a href="../es/">Español</a></li><li><a href="../ar/">العربية</a></li><li><a href="../ru/">Русский</a></li><li><a href="../pt/">Português</a></li></ul></details></div></header>
+<div class="hero" id="top"><div class="wrap"><h1>Das Wort lesen, meditieren und weiter vertiefen</h1><p>Hagah Dabar ist eine protestantische Bibelmeditations-App, die Bibeltexte, Versauslegungen, Meditationspläne, Querverweise, Ursprachen, Bücher und Predigten an einem Ort vereint. Lesen Sie dasselbe Wort nahtlos auf dem Smartphone und dem PC.</p>
+<a class="btn" href="#get">App herunterladen</a>
+<div class="verse"><b>Das heutige Bibelwort für Ihr Herz</b><q>Dein Wort ist Leuchte meinem Fuße und Licht für meinen Pfad.</q><cite>Psalmen 119:105</cite></div></div></div>
+<section id="name"><div class="wrap name"><h2>Der Name „Hagah Dabar“</h2><p class="heb">&#1492;&#1464;&#1490;&#1464;&#1492; &#183; &#1491;&#1468;&#1464;&#1489;&#1464;&#1512;</p>
+<p>„Hagah“ ist ein hebräisches Wort, das „laut aufsagen, leise murmeln“ bedeutet. Das Wort für „nachdenken“ bzw. „meditieren“ in Psalm 1 („und über seinem Gesetz nachsinnt Tag und Nacht“) ist genau dieses Wort. Dasselbe Wort wird auch für das Knurren eines Löwen über seiner Beute (Jes 31,4) und das Gurren einer Taube (Jes 38,14) verwendet.</p><p>Die in der Bibel beschriebene Meditation bleibt nicht nur beim Gedanken im Kopf stehen. Es geht darum, das Wort auf die Lippen zu nehmen, es immer wieder zu wiederholen und im Herzen zu verankern.</p><p>„Dabar“ bedeutet „Wort“. Es bezeichnet sowohl das von Gott gesprochene Wort als auch das, was dieses Wort bewirkt.</p><p>Daher bedeutet Hagah Dabar „das Wort wiederholen und darüber nachsinnen“. Wir haben diese App entwickelt, damit Sie auch an einem geschäftigen Tag einen Vers auf den Lippen tragen und bei freier Zeit tief in das Wort eintauchen können.</p></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="stats"><div class="stat"><b>13,875</b><span>Verskommentare</span></div><div class="stat"><b>156</b><span>Leseplan</span></div><div class="stat"><b>47</b><span>Linsen-Meditation</span></div><div class="stat"><b>40</b><span>Klassische Bücher &amp; Predigten</span></div><div class="stat"><b>23</b><span>Bibelübersetzungen</span></div></div></div></section>
+<section id="sync"><div class="wrap"><h2>Smartphone &amp; PC – Eine Meditation</h2><p class="lead">Die beiden Apps arbeiten Hand in Hand. Setzen Sie die unterwegs auf dem Smartphone begonnene Meditation zu Hause am PC nahtlos fort.</p>
+<div class="sync"><div class="card"><h3>Unterwegs mit dem Smartphone</h3><p>Lesen Sie unterwegs das Tageswort und einen Teil des Leseplans, und halten Sie spontane Gedanken in kurzen Meditationsnotizen fest. Hören Sie Predigten, Gebete und Lobpreisvideos an der Stelle weiter, an der Sie aufgehört haben.</p></div>
+<div class="card"><h3>Vertiefung zu Hause am PC</h3><p>Breiten Sie auf dem großen Bildschirm Bibelstellenvergleiche, den roten Faden, Kommentare, Ursprachen und klassische Werke nebeneinander aus und verfeinern Sie die auf dem Smartphone hinterlassenen Notizen zu einer Studiernotiz.</p></div>
+<div class="card link"><h3>&#8644; Verbindung im selben WLAN</h3><p>Auf dem Smartphone erstellte Notizen, Lesezeichen und Planfortschritte werden zum PC übertragen, und am PC bearbeitete Inhalte wandern aufs Smartphone. Die Geräte tauschen Daten direkt im heimischen WLAN aus und laden sie auf keinen Internetserver hoch.</p></div></div></div></section>
+<section id="feat"><div class="wrap"><h2>Funktionen</h2><div class="set"><div class="txt"><h3>Leicht verständliche Auslegung zu jedem Vers</h3><p>Klicken Sie auf einen Vers, um Erklärungen, Meditationsfragen und Gebete zu öffnen. Auch der Zusammenhang von Kapiteln und Abschnitten ist direkt einsehbar.</p></div><figure><img class="m" src="../a/m/04_sheet_desc.png" alt="Mobil" loading="lazy"><figcaption>Mobil</figcaption></figure><figure><img class="p" src="../a/pc/pc_desc.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div><div class="set"><div class="txt"><h3>Inhaltlich verknüpfte Verse</h3><p>Zeigt mit Erklärungen, wie ein Vers mit anderen Stellen der ganzen Bibel zusammenhängt und warum. Gehen Sie dem Fluss des Wortes von Genesis bis zur Offenbarung nach.</p></div><figure><img class="m" src="../a/m/05_sheet_links.png" alt="Mobil" loading="lazy"><figcaption>Mobil</figcaption></figure><figure><img class="p" src="../a/pc/pc_flow.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div><div class="set"><div class="txt"><h3>Kommentare und Ursprachen</h3><p>Lesen Sie klassische Kommentare in heutiger Sprache und entdecken Sie, wo hebräische und griechische Wörter in der Bibel wiederkehren.</p></div><figure><img class="m" src="../a/m/06e_sheet_lex.png" alt="Mobil" loading="lazy"><figcaption>Mobil</figcaption></figure><figure><img class="p" src="../a/pc/pc_comm.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div><div class="set"><div class="txt"><h3>Meditationspläne und Perspektiven</h3><p>Von Bibellektüreplänen bis zur thematischen Meditation – legen Sie Ihre tägliche Portion fest und betrachten Sie ein Thema aus verschiedenen Blickwinkeln.</p></div><figure><img class="m" src="../a/m/13_plan_today_card.png" alt="Mobil" loading="lazy"><figcaption>Mobil</figcaption></figure></div><div class="set"><div class="txt"><h3>Klassische Bücher und Predigtsammlungen</h3><p>Lesen Sie klassische Glaubensschriften von Autoren wie Spurgeon, Murray oder Bounds in heutiger Sprache.</p></div><figure><img class="m" src="../a/m/17_reader.png" alt="Mobil" loading="lazy"><figcaption>Mobil</figcaption></figure><figure><img class="p" src="../a/pc/pc_reading.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div><div class="set"><div class="txt"><h3>Predigt-, Gebets- und Loblied-Videos</h3><p>Hören Sie zu Versen passende Predigten, Gebete und Loblieder in verschiedenen Sprachen und setzen Sie die Wiedergabe an derselben Stelle fort.</p></div><figure><img class="m" src="../a/m/25_youtube.png" alt="Mobil" loading="lazy"><figcaption>Mobil</figcaption></figure></div><div class="set"><div class="txt"><h3>AI-Assistent</h3><p>Befragen Sie Ihren gewählten AI zu Versen, fassen Sie verschiedene Antworten in einem Text zusammen und speichern Sie sie in Ihrem Studiennotizbuch.</p></div><figure><img class="m" src="../a/m/22c_ai_final.png" alt="Mobil" loading="lazy"><figcaption>Mobil</figcaption></figure><figure><img class="p" src="../a/pc/pc_ai.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div></div></section>
+<section id="shots"><div class="wrap gal"><h2>Vorschau</h2>
+<input type="radio" name="g" id="gm" checked><input type="radio" name="g" id="gp">
+<div class="tabs"><label for="gm">Mobil</label><label for="gp">PC</label></div>
+<div class="strip sm"><figure><img class="m" src="../a/m/01_home.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/04_sheet_desc.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/05_sheet_links.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/06e_sheet_lex.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/14_lens_page.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/17_reader.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/25c_youtube_prayer.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/22c_ai_final.png" alt="" loading="lazy"><figcaption></figcaption></figure></div><div class="strip sp"><figure><img class="p" src="../a/pc/pc_desc.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="../a/pc/pc_flow.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="../a/pc/pc_comm.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="../a/pc/pc_reading.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="../a/pc/pc_ai.png" alt="" loading="lazy"><figcaption></figcaption></figure></div></div></section>
+<section id="get"><div class="wrap"><h2>App herunterladen</h2><div class="get"><div class="card"><b>Android</b><span class="soon">Demnächst</span></div><div class="card"><b>iPhone</b><span class="soon">Demnächst</span></div><div class="card"><b>Windows PC</b><span class="soon">Demnächst</span></div></div><p class="note">Nach der Veröffentlichung können Sie die App hier herunterladen.</p></div></section>
+<section id="ask"><div class="wrap"><h2>Kontakt</h2><p class="lead">Haben Sie Fragen oder Verbesserungsvorschläge zur App? Wir antworten Ihnen an die angegebene E-Mail-Adresse.</p>
+<form onsubmit="return false"><label class="f">E-Mail für die Antwort<input class="f" type="email" name="email" required></label>
+<label class="f">Nachricht<textarea name="body" required></textarea></label>
+<input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn" type="submit" disabled>Senden</button><p class="note">Das Kontaktformular wird bald geöffnet. Nachrichten können derzeit noch nicht gesendet werden.</p></form></div></section>
+<footer><div class="wrap"><h3>Datenschutz</h3><p>Diese Website und App sammeln keine Besucherdaten. Es werden keine Analysetools, Werbe-Tracker oder externen Schriftarten verwendet. Nur die E-Mail-Adresse und der Inhalt, die Sie beim Senden einer Anfrage angeben, werden zur Beantwortung gespeichert.</p><p>Hagah Dabar · Das Copyright der Bibeltexte liegt bei den jeweiligen Rechteinhabern.</p></div></footer>
+</body></html>

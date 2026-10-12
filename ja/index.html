@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ハガ・ダバル · 聖書の黙想と研究</title>
+<meta name="description" content="ハガ・ダバルは、聖書の本文と聖句解説、黙想プラン、関連聖句や原語、書籍・説教集を一つの場所で読むプロテスタントの聖書黙想アプリです。スマホでもPCでも同じ御言葉を続けて読むことができます。">
+<link rel="icon" href="../a/icon.png">
+<script>(function(){var k='hagah_theme',t;try{t=localStorage.getItem(k)}catch(e){}if(!t)t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();</script>
+<style>
+:root{--bg:#f6f1e7;--panel:#fffdf8;--ink:#2b2a27;--dim:#6b665c;--accent:#7a4e2d;--line:#e2d8c6;--hero:#efe5d3;--frame:#3a3530}
+:root[data-theme=dark]{--bg:#1b1916;--panel:#25221e;--ink:#ece6d9;--dim:#b4ab99;--accent:#d8a874;--line:#3a352e;--hero:#221f1b;--frame:#0e0d0c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);line-height:1.8;font-size:17px;word-break:keep-all;
+font-family:"Noto Serif KR","Batang","바탕","Noto Serif",Georgia,serif;transition:background .2s,color .2s}
+a{color:var(--accent)}.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;align-items:center;gap:12px;height:62px}
+.mode{background:none;border:1px solid var(--line);color:var(--ink);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:16px;line-height:1}
+header img{width:30px;height:30px;border-radius:7px}.brand{font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;white-space:nowrap}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--dim);text-decoration:none;font-size:15px}nav a:hover{color:var(--accent)}
+.lang{position:relative;font-size:15px}.lang summary{cursor:pointer;list-style:none;border:1px solid var(--line);padding:4px 12px;border-radius:4px;color:var(--ink)}
+.lang summary::-webkit-details-marker{display:none}
+.lang ul{position:absolute;right:0;top:36px;margin:0;padding:6px 0;list-style:none;background:var(--panel);border:1px solid var(--line);min-width:150px;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.lang li a{display:block;padding:6px 16px;color:var(--ink);text-decoration:none}.lang li a:hover,.lang li a.on{color:var(--accent)}
+.hero{background:var(--hero);padding:76px 0 64px;text-align:center}.hero .wrap{max-width:780px}
+.hero h1{font-size:40px;line-height:1.35;margin:0 0 18px;letter-spacing:-.01em}.hero p{color:var(--dim);font-size:18px;margin:0 0 28px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 30px;text-decoration:none;font-weight:700;border-radius:2px;border:0;font:inherit}
+:root[data-theme=dark] .btn{color:#1b1916}
+.verse{margin:38px auto 0;max-width:640px;padding:22px 26px;background:var(--panel);border-left:4px solid var(--accent);text-align:left}
+.verse b{display:block;font-size:13px;color:var(--dim);font-weight:600;margin-bottom:6px}.verse q{font-size:19px}
+.verse cite{display:block;margin-top:8px;color:var(--dim);font-style:normal;font-size:14px}
+section{padding:68px 0}section h2{font-size:28px;margin:0 0 14px;text-align:center}.lead{color:var(--dim);text-align:center;max-width:720px;margin:0 auto 34px}
+.name{max-width:760px;margin:auto}.name .heb{text-align:center;font-size:30px;color:var(--accent);margin:0 0 18px;direction:rtl;font-family:"SBL Hebrew","Ezra SIL","Times New Roman",serif}
+.name p{margin:0 0 14px}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.stat{text-align:center;padding:18px 8px;background:var(--panel);border:1px solid var(--line);border-radius:4px}
+.stat b{display:block;font-size:26px;color:var(--accent)}.stat span{color:var(--dim);font-size:14px}
+.sync{display:grid;grid-template-columns:1fr 1fr;gap:22px}.sync .card{padding:26px}
+.sync .link{grid-column:1/3;text-align:center;border-style:dashed}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:24px}.card h3{margin:0 0 8px;font-size:20px}.card p{margin:0;color:var(--dim)}
+.set{display:grid;grid-template-columns:250px 200px 1fr;gap:30px;align-items:center;padding:34px 0;border-top:1px solid var(--line)}
+.set h3{font-size:23px;margin:0 0 10px}.set p{color:var(--dim);margin:0}.set .nopc{grid-column:3}
+.set figure{margin:0;text-align:center}.set figcaption{color:var(--dim);font-size:13px;margin-top:6px}
+.shots figure{margin:0;text-align:center}.shots figcaption{color:var(--dim);font-size:13px;margin-top:6px}
+img.m{width:200px;border-radius:18px;border:6px solid var(--frame);display:block}
+img.p{width:100%;max-width:560px;border-radius:6px;border:1px solid var(--line);display:block;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.gal input{display:none}.tabs{text-align:center;margin-bottom:22px}
+.tabs label{display:inline-block;padding:7px 26px;border:1px solid var(--line);cursor:pointer;color:var(--dim);margin:0 -1px}
+#gm:checked~.tabs label[for=gm],#gp:checked~.tabs label[for=gp]{background:var(--accent);color:#fff;border-color:var(--accent)}
+.strip{display:none;gap:18px;overflow-x:auto;padding-bottom:12px}
+#gm:checked~.sm,#gp:checked~.sp{display:flex}.strip figure{margin:0;flex:0 0 auto}.sp img.p{width:620px;max-width:none}
+.get{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:center}.get b{display:block;font-size:20px}.soon{color:var(--dim)}
+form{max-width:620px;margin:auto;display:grid;gap:14px}label.f{font-size:14px;color:var(--dim)}
+input.f,textarea{width:100%;padding:12px;font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:4px}textarea{min-height:140px}
+.hp{position:absolute;left:-9999px}.note{color:var(--dim);font-size:14px;text-align:center}
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--dim);font-size:14px}footer h3{color:var(--ink);font-size:15px;margin:0 0 6px}
+@media(max-width:860px){nav{display:none}.hero h1{font-size:30px}.stats{grid-template-columns:repeat(2,1fr)}
+.sync,.get{grid-template-columns:1fr}.sync .link{grid-column:auto}
+.set{grid-template-columns:1fr}.set figure{justify-self:center}img.m{width:170px}}
+</style></head><body>
+<header><div class="wrap"><button class="mode" type="button" title="ダークモード" aria-label="ダークモード" onclick="var r=document.documentElement,t=r.getAttribute('data-theme')=='dark'?'light':'dark';r.setAttribute('data-theme',t);try{localStorage.setItem('hagah_theme',t)}catch(e){}">&#9680;</button>
+<img src="../a/icon.png" alt=""><a class="brand" href="#top">ハガ・ダバル</a>
+<nav><a href="#name">名前の由来</a><a href="#sync">スマホとPC</a><a href="#feat">機能</a><a href="#shots">スクリーンショット</a><a href="#get">アプリを入手</a><a href="#ask">お問い合わせ</a></nav>
+<details class="lang"><summary>日本語 &#9662;</summary><ul><li><a href="../en/">English</a></li><li><a href="../">한국어</a></li><li><a href="../zh/">中文(简体)</a></li><li><a href="../zht/">中文(繁體)</a></li><li><a href="../ja/" class="on">日本語</a></li><li><a href="../de/">Deutsch</a></li><li><a href="../fr/">Français</a></li><li><a href="../es/">Español</a></li><li><a href="../ar/">العربية</a></li><li><a href="../ru/">Русский</a></li><li><a href="../pt/">Português</a></li></ul></details></div></header>
+<div class="hero" id="top"><div class="wrap"><h1>御言葉を読み、黙想し、さらに深く見つめる</h1><p>ハガ・ダバルは、聖書の本文と聖句解説、黙想プラン、関連聖句や原語、書籍・説教集を一つの場所で読むプロテスタントの聖書黙想アプリです。スマホでもPCでも同じ御言葉を続けて読むことができます。</p>
+<a class="btn" href="#get">アプリを入手</a>
+<div class="verse"><b>今日心に留める御言葉</b><q>Your word is a lamp to my feet and a light to my path.</q><cite>詩篇 119:105</cite></div></div></div>
+<section id="name"><div class="wrap name"><h2>「ハガ・ダバル」という名前</h2><p class="heb">&#1492;&#1464;&#1490;&#1464;&#1492; &#183; &#1491;&#1468;&#1464;&#1489;&#1464;&#1512;</p>
+<p>「ハガ」はヘブライ語で「声を大にして反芻する、低く呟く」という意味です。詩篇1篇の「その律法を昼夜黙想する」における「黙想する」がまさにこの言葉です。同じ言葉が、ライオンが獲物を捕らえて低く唸る声（イザヤ 31:4）や、鳩が鳴く声（イザヤ 38:14）にも使われました。</p><p>聖書の語る黙想は、頭の中の考えにとどまりません。御言葉を口に含んで繰り返し反芻し、心に刻みつけることです。</p><p>「ダバル」は「言葉」です。神様が語られた言葉であると同時に、その言葉が成し遂げる業までをも含意する言葉です。</p><p>それゆえ、ハガ・ダバルとは「御言葉を反芻する」という意味です。忙しい日常の中でも御言葉の一節を口ずさみ、時間のある時にはその御言葉を深く掘り下げることができるよう、このアプリを作りました。</p></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="stats"><div class="stat"><b>13,875</b><span>聖句解説</span></div><div class="stat"><b>156</b><span>黙想プラン</span></div><div class="stat"><b>47</b><span>レンズ黙想</span></div><div class="stat"><b>40</b><span>古典図書・説教集</span></div><div class="stat"><b>23</b><span>聖書翻訳</span></div></div></div></section>
+<section id="sync"><div class="wrap"><h2>スマホとPC、ひとつの黙想</h2><p class="lead">2つのアプリは連動します。外出中にスマホで始めた黙想を、自宅のPCで深く引き継ぎます。</p>
+<div class="sync"><div class="card"><h3>外出先ではスマホで</h3><p>通勤中や休憩時間に、今日の御言葉と黙想プランを読み進め、思い浮かんだ考えを短い黙想ノートに残します。説教・祈祷・賛美の動画も、停止した場所から続けて視聴できます。</p></div>
+<div class="card"><h3>自宅ではPCで深く</h3><p>広い画面で聖句のつながりと御言葉の流れ、注釈と原典、古典図書を並べて開き、スマホに残したノートを整理して研究ノートへと発展させます。</p></div>
+<div class="card link"><h3>&#8644; 同じWi-Fiでシームレスにつながる</h3><p>スマホで書いたノートやブックマーク、プランの進捗がPCに同期され、PCで整理した資料がスマホに反映されます。自宅のWi-Fi経由で2台のデバイス間で直接送受信され、インターネットサーバーにはアップロードされません。</p></div></div></div></section>
+<section id="feat"><div class="wrap"><h2>主な機能</h2><div class="set"><div class="txt"><h3>聖句ごとの分かりやすい解説</h3><p>聖句をタップすると、解説と黙想の質問、黙想の祈りが開きます。章と段落の流れも同じ画面で確認できます。</p></div><figure><img class="m" src="../a/m/04_sheet_desc.png" alt="モバイル" loading="lazy"><figcaption>モバイル</figcaption></figure><figure><img class="p" src="../a/pc/pc_desc.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div><div class="set"><div class="txt"><h3>意味でつながる聖句</h3><p>一つの聖句が聖書のどの箇所とつながっているのか、なぜつながっているのかを解説とともに示します。御言葉の流れに沿って創世記からヨハネの黙示録まで歩みます。</p></div><figure><img class="m" src="../a/m/05_sheet_links.png" alt="モバイル" loading="lazy"><figcaption>モバイル</figcaption></figure><figure><img class="p" src="../a/pc/pc_flow.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div><div class="set"><div class="txt"><h3>注解と原語</h3><p>様々な古典注解を現代の言葉で読み直し、ヘブライ語・ギリシャ語の単語が聖書のどこに再び登場するのかを探求します。</p></div><figure><img class="m" src="../a/m/06e_sheet_lex.png" alt="モバイル" loading="lazy"><figcaption>モバイル</figcaption></figure><figure><img class="p" src="../a/pc/pc_comm.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div><div class="set"><div class="txt"><h3>黙想プランとレンズ黙想</h3><p>通読からテーマ別の黙想まで一日の割り当てを定め、一つのテーマを様々な角度から照らし出して読ませます。</p></div><figure><img class="m" src="../a/m/13_plan_today_card.png" alt="モバイル" loading="lazy"><figcaption>モバイル</figcaption></figure></div><div class="set"><div class="txt"><h3>古典書籍と説教集</h3><p>スパルジョン、マレー、バウンズなどの信仰古典を現代の言葉で読み直します。</p></div><figure><img class="m" src="../a/m/17_reader.png" alt="モバイル" loading="lazy"><figcaption>モバイル</figcaption></figure><figure><img class="p" src="../a/pc/pc_reading.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div><div class="set"><div class="txt"><h3>説教・祈り・賛美の映像</h3><p>聖句とつながる説教、祈り、賛美を言語別に選択して聴き、中断したところから再び聴き続けます。</p></div><figure><img class="m" src="../a/m/25_youtube.png" alt="モバイル" loading="lazy"><figcaption>モバイル</figcaption></figure></div><div class="set"><div class="txt"><h3>AIアシスタント</h3><p>選択したAIに聖句について尋ね、複数の回答を一つの文章にまとめて自分の研究ノートに残します。</p></div><figure><img class="m" src="../a/m/22c_ai_final.png" alt="モバイル" loading="lazy"><figcaption>モバイル</figcaption></figure><figure><img class="p" src="../a/pc/pc_ai.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div></div></section>
+<section id="shots"><div class="wrap gal"><h2>画面プレビュー</h2>
+<input type="radio" name="g" id="gm" checked><input type="radio" name="g" id="gp">
+<div class="tabs"><label for="gm">モバイル</label><label for="gp">PC</label></div>
+<div class="strip sm"><figure><img class="m" src="../a/m/01_home.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/04_sheet_desc.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/05_sheet_links.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/06e_sheet_lex.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/14_lens_page.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/17_reader.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/25c_youtube_prayer.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="../a/m/22c_ai_final.png" alt="" loading="lazy"><figcaption></figcaption></figure></div><div class="strip sp"><figure><img class="p" src="../a/pc/pc_desc.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="../a/pc/pc_flow.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="../a/pc/pc_comm.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="../a/pc/pc_reading.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="../a/pc/pc_ai.png" alt="" loading="lazy"><figcaption></figcaption></figure></div></div></section>
+<section id="get"><div class="wrap"><h2>アプリを入手</h2><div class="get"><div class="card"><b>Android</b><span class="soon">準備中</span></div><div class="card"><b>iPhone</b><span class="soon">準備中</span></div><div class="card"><b>Windows PC</b><span class="soon">準備中</span></div></div><p class="note">リリースされ次第、こちらからダウンロードいただけます。</p></div></section>
+<section id="ask"><div class="wrap"><h2>お問い合わせ</h2><p class="lead">アプリのご利用中におけるご質問やご要望をお送りください。ご返信はご入力いただいたメールアドレスにお送りします。</p>
+<form onsubmit="return false"><label class="f">返信先メールアドレス<input class="f" type="email" name="email" required></label>
+<label class="f">お問い合わせ内容<textarea name="body" required></textarea></label>
+<input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn" type="submit" disabled>送信</button><p class="note">お問い合わせ受付はまもなく開始します。現在は送信されません。</p></form></div></section>
+<footer><div class="wrap"><h3>プライバシー</h3><p>このホームページおよびアプリは、訪問履歴を収集しません。分析ツール、広告追跡、外部フォントを使用していません。お問い合わせの際にご入力いただいたメールアドレスと内容のみ、返信のために保管します。</p><p>ハガ・ダバル · 聖書本文の著作権は各訳本の権利者に帰属します。</p></div></footer>
+</body></html>
