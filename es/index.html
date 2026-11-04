@@ -2,12 +2,12 @@
 <html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Hagah Dabar · Meditación y estudio bíblico</title>
-<meta name="description" content="Hagah Dabar es una aplicación protestante de meditación bíblica que reúne en un solo lugar el texto bíblico, comentarios por versículo, planes de meditación, versículos conectados y palabras originales, libros y colecciones de sermones. Lee la misma Palabra de manera continua tanto en tu teléfono como en tu PC.">
+<title>Asah Dabar · Meditación y estudio bíblico</title>
+<meta name="description" content="Asah Dabar es una aplicación protestante de meditación bíblica que reúne en un solo lugar el texto bíblico, comentarios por versículo, planes de meditación, versículos conectados y palabras originales, libros y colecciones de sermones. Lee la misma Palabra de manera continua tanto en tu teléfono como en tu PC.">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Hagah Dabar">
-<meta property="og:title" content="Hagah Dabar · Meditación y estudio bíblico">
-<meta property="og:description" content="Hagah Dabar es una aplicación protestante de meditación bíblica que reúne en un solo lugar el texto bíblico, comentarios por versículo, planes de meditación, versículos conectados y palabras originales, libros y colecciones de sermones. Lee la misma Palabra de manera continua tanto en tu teléfono como en tu PC.">
+<meta property="og:site_name" content="Asah Dabar">
+<meta property="og:title" content="Asah Dabar · Meditación y estudio bíblico">
+<meta property="og:description" content="Asah Dabar es una aplicación protestante de meditación bíblica que reúne en un solo lugar el texto bíblico, comentarios por versículo, planes de meditación, versículos conectados y palabras originales, libros y colecciones de sermones. Lee la misma Palabra de manera continua tanto en tu teléfono como en tu PC.">
 <meta property="og:url" content="https://suhyw123-hub.github.io/es/">
 <meta property="og:image" content="https://suhyw123-hub.github.io/a/og.png">
 <meta property="og:image:width" content="512"><meta property="og:image:height" content="512">
@@ -74,15 +74,16 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--dim);font-siz
 .vid img{width:100%;border-radius:4px;display:block;margin-bottom:8px}.vid b{display:block}.vid p{color:var(--dim);margin:4px 0 0;font-size:14px}
 @media(max-width:860px){.vids{grid-template-columns:1fr}.step{flex-direction:column}}
 
+html{overflow-y:scroll;scrollbar-gutter:stable}body{position:relative}
 header nav .area{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden;margin:0 6px}
 header nav .area a{padding:3px 10px;margin:0}header nav a.on{color:var(--accent);font-weight:700}
-nav.sub{display:flex;gap:18px;justify-content:center;padding:10px 0;border-bottom:1px solid var(--line);background:var(--panel)}
+nav.sub{display:flex;gap:18px;justify-content:center;padding:8px 0;border-top:1px solid var(--line);background:var(--panel)}
 nav.sub a{color:var(--ink);text-decoration:none}nav.sub a.on{color:var(--accent);font-weight:700}
 .page{padding:28px 0 60px}.page h1{font-size:28px;margin:0 0 18px}
 .page h1,.page h2,.page h3,.page p,.page li,.toc,.toc a{text-align:left}
-.side{display:grid;grid-template-columns:220px 1fr;gap:28px}.toc{display:flex;flex-direction:column;gap:2px;position:sticky;top:70px;align-self:start}
+.side{display:grid;grid-template-columns:220px 1fr;gap:28px}.toc{display:flex;flex-direction:column;gap:2px;position:sticky;top:120px;align-self:start}
 .toc a{padding:7px 10px;border-radius:4px;color:var(--ink);text-decoration:none}.toc a:hover{background:var(--panel)}
-.sec{display:none}.sec:target{display:block}.secs:not(:has(.sec:target)) .sec:first-child{display:block}
+.sec{display:none}.anc{position:absolute;top:0;left:0}.secs{min-height:70vh}
 .secs h2,.sec1 h2{font-size:22px;margin:0 0 12px}.secs ul,.sec1 ul{padding-left:20px}.secs li{margin:3px 0}
 .secs table,.sec1 table{border-collapse:collapse;width:100%;margin:10px 0}.secs td,.secs th,.sec1 td,.sec1 th{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
 .prep{border:1px dashed var(--line);color:var(--dim);padding:26px;text-align:center;border-radius:4px;margin:10px 0}
@@ -97,10 +98,10 @@ nav.foot{margin:10px 0}nav.foot a{color:var(--dim)}
 @media(max-width:860px){.side{grid-template-columns:1fr}.toc{position:static;flex-direction:row;flex-wrap:wrap}}
 </style></head><body>
 <header><div class="wrap"><button class="mode" type="button" title="Modo oscuro" aria-label="Modo oscuro" onclick="var r=document.documentElement,t=r.getAttribute('data-theme')=='dark'?'light':'dark';r.setAttribute('data-theme',t);try{localStorage.setItem('hagah_theme',t)}catch(e){}">&#9680;</button>
-<img src="../a/icon.png" alt=""><a class="brand" href="../es/">Hagah Dabar</a>
+<img src="../a/icon.png" alt=""><a class="brand" href="../es/">Asah Dabar</a>
 <nav><a href="news/">소식</a><span class="area"><a href="phone/">성경앱</a><a href="shop/">쇼핑</a></span></nav>
-<details class="lang"><summary>Español &#9662;</summary><ul><li><a href="../en/">English</a></li><li><a href="../">한국어</a></li><li><a href="../zh/">中文(简体)</a></li><li><a href="../zht/">中文(繁體)</a></li><li><a href="../ja/">日本語</a></li><li><a href="../de/">Deutsch</a></li><li><a href="../fr/">Français</a></li><li><a href="../es/" class="on">Español</a></li><li><a href="../ar/">العربية</a></li><li><a href="../ru/">Русский</a></li><li><a href="../pt/">Português</a></li></ul></details></div></header>
-
-<div class="hero" id="top"><div class="wrap"><h1>말씀을 읽고, 묵상하고, 준행하다</h1><p>{{WEB\_APP\_NAME}}는 성경 본문과 해설, 묵상플랜, 원어, 주석, 연결구절, 도서·설교집 등을 한 자리에서 읽는 개신교 성경 묵상 앱입니다. 모바일 폰과 PC를 동기화하여 같은 말씀을 이어서 읽을 수 있습니다.</p><a class="btn" href="#get">Obtener app</a></div></div><section id="s2"><div class="wrap home"><h2>「{{WEB\_APP\_NAME}}」라는 이름</h2><p>하가는 히브리어로 「소리 내어 되뇌다, 나직이 읊조리다」라는 뜻입니다. 시편 1편의 「그 율법을 주야로 묵상하는도다」에서 「묵상하다」가 바로 이 낱말입니다. 같은 낱말이 사자가 먹이를 움키고 낮게 으르렁거리는 소리(사 31:4)와 비둘기가 구구 우는 소리(사 38:14)에도 쓰였습니다.</p><p>성경이 말하는 묵상은 머릿속 생각에 그치지 않습니다. 말씀을 입에 올려 거듭 되뇌며 마음에 새기는 일입니다.</p><p>다바르는 「말씀」입니다. 하나님께서 하신 말이면서 그 말씀이 이루는 일까지 함께 뜻하는 낱말입니다.</p><p>그래서 하가 다바르는 「말씀을 되뇌다」입니다. 바쁜 하루 중에도 말씀 한 구절을 입에 올리고, 시간이 날 때는 그 말씀을 깊이 파고들 수 있도록 이 앱을 만들었습니다.</p></div></section><section id="s3"><div class="wrap home"><h2>최근 소식</h2><p>\[\[자동:최근소식]]</p></div></section><section id="s4"><div class="wrap home"><h2>앱이 다루는 범위</h2><p>* <a href="phone/"><b>폰</b></a> 이동 중에 짧게 묵상합니다 * <a href="pc/"><b>PC</b></a> 넓은 화면에서 깊이 연구하고 폰과 동기화합니다 * <a href="shop/"><b>쇼핑</b></a> 한 앱 안의 따로 된 영역입니다 * <a href="pc/#s2"><b>사용자 모드</b></a> 앱 원본 위에 내 수정을 덮어 씁니다(원본은 그대로) * <b>다국어</b> 화면 글자와 자료를 언어별로 받습니다</p></div></section><section id="s5"><div class="wrap home"><h2>이렇게 활용해 보세요</h2><p>* <a href="use/#s1">아침 묵상 10분</a> * <a href="use/#s3">설교·성경공부 준비</a> * <a href="use/#s4">말씀 암송과 가족 녹음</a> * <a href="use/#s9">위로가 필요한 사람에게</a> \[\[움직임:verse\_flow]]</p></div></section><section id="get"><div class="wrap home"><h2>다운로드</h2><p>\[\[자동:다운로드]]</p></div></section>
+<details class="lang"><summary>Español &#9662;</summary><ul><li><a href="../en/">English</a></li><li><a href="../">한국어</a></li><li><a href="../zh/">中文(简体)</a></li><li><a href="../zht/">中文(繁體)</a></li><li><a href="../ja/">日本語</a></li><li><a href="../de/">Deutsch</a></li><li><a href="../fr/">Français</a></li><li><a href="../es/" class="on">Español</a></li><li><a href="../ar/">العربية</a></li><li><a href="../ru/">Русский</a></li><li><a href="../pt/">Português</a></li></ul></details></div>
+</header>
+<div class="hero" id="top"><div class="wrap"><h1>말씀을 읽고, 묵상하고, 준행하다</h1><p>Asah Dabar는 성경 본문과 해설, 묵상플랜, 원어, 주석, 연결구절, 도서·설교집 등을 한 자리에서 읽는 개신교 성경 묵상 앱입니다. 모바일 폰과 PC를 동기화하여 같은 말씀을 이어서 읽을 수 있습니다.</p><a class="btn" href="#get">Obtener app</a></div></div><section id="s2"><div class="wrap home"><h2>「Asah Dabar」라는 이름</h2><p>아사는 히브리어로 「행하다, 만들다」입니다. 하나님이 궁창을 「만드시고」(창 1:7), 아브라함이 「이같이 행하여」(창 22:16) 아들을 드린 자리에 쓰인 그 낱말입니다. 구약 성경에 2,600번 넘게 나와, 「말하다」와 「있다」 다음으로 자주 쓰인 동사입니다. 성경에서 「준행하다」는 말씀을 듣고 지켜서 행하는 것을 가리키고, 그 한가운데에 이 낱말이 있습니다.</p><p>다바르는 「말씀」입니다. 하나님께서 하신 말이면서, 그 말씀이 이루는 일까지 함께 뜻하는 낱말입니다.</p><p>야고보서는 「너희는 말씀을 행하는 자가 되고 듣기만 하여 자신을 속이는 자가 되지 말라」(약 1:22)고 합니다. 히브리어로 옮긴 신약은 이 「말씀을 행하는 자」를 아사(행하다)와 다바르(말씀), 두 낱말로 적습니다.</p><p>그래서 아사 다바르는 「말씀을 행하다」입니다. 읽고 묵상한 말씀이 하루의 걸음이 되도록, 성경 본문과 설명, 묵상과 기도, 연결된 구절을 한 자리에 모았습니다.</p></div></section><section id="s3"><div class="wrap home"><h2>최근 소식</h2><div class="card upd"><h3>(Announcement) Hayung, Hello<small>2026-09-19</small></h3></div><p><a href="news/">소식 ›</a></p></div></section><section id="s4"><div class="wrap home"><h2>앱이 다루는 범위</h2><ul><li><a href="phone/"><b>폰</b></a> 이동 중에 짧게 묵상합니다</li><li><a href="pc/"><b>PC</b></a> 넓은 화면에서 깊이 연구하고 폰과 동기화합니다</li><li><a href="shop/"><b>쇼핑</b></a> 한 앱 안의 따로 된 영역입니다</li><li><a href="pc/#s2"><b>사용자 모드</b></a> 앱 원본 위에 내 수정을 덮어 씁니다(원본은 그대로)</li><li><b>다국어</b> 화면 글자와 자료를 언어별로 받습니다</li></ul></div></section><section id="s5"><div class="wrap home"><h2>이렇게 활용해 보세요</h2><ul><li><a href="use/#s1">아침 묵상 10분</a></li><li><a href="use/#s3">설교·성경공부 준비</a></li><li><a href="use/#s4">말씀 암송과 가족 녹음</a></li><li><a href="use/#s9">위로가 필요한 사람에게</a></li></ul><figure class="cap"><img src="../a/cap/verse_flow.webp" alt="" loading="lazy"></figure></div></section><section id="get"><div class="wrap home"><h2>다운로드</h2><div class="get"><div class="card"><b>Android</b><span class="soon">Próximamente</span></div><div class="card"><b>iPhone</b><span class="soon">Próximamente</span></div><div class="card"><b>Windows PC</b><span class="soon">Próximamente</span></div></div></div></section>
 <div class="wrap"><nav class="foot"><a href="./#get">다운로드</a> · <a href="news/">소식</a> · <a href="help/">Q&amp;A</a> · <a href="policy/">운영 정책</a> · <a href="policy/#copyright">저작권</a></nav></div>
 </body></html>

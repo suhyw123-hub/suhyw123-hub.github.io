@@ -5,7 +5,7 @@
 <title>소식 · ハガ・ダバル · 聖書の黙想と研究</title>
 <meta name="description" content="ハガ・ダバルは、聖書の本文と聖句解説、黙想プラン、関連聖句や原語、書籍・説教集を一つの場所で読むプロテスタントの聖書黙想アプリです。スマホでもPCでも同じ御言葉を続けて読むことができます。">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Hagah Dabar">
+<meta property="og:site_name" content="Asah Dabar">
 <meta property="og:title" content="소식 · ハガ・ダバル · 聖書の黙想と研究">
 <meta property="og:description" content="ハガ・ダバルは、聖書の本文と聖句解説、黙想プラン、関連聖句や原語、書籍・説教集を一つの場所で読むプロテスタントの聖書黙想アプリです。スマホでもPCでも同じ御言葉を続けて読むことができます。">
 <meta property="og:url" content="https://suhyw123-hub.github.io/ja/news/">
@@ -74,15 +74,16 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--dim);font-siz
 .vid img{width:100%;border-radius:4px;display:block;margin-bottom:8px}.vid b{display:block}.vid p{color:var(--dim);margin:4px 0 0;font-size:14px}
 @media(max-width:860px){.vids{grid-template-columns:1fr}.step{flex-direction:column}}
 
+html{overflow-y:scroll;scrollbar-gutter:stable}body{position:relative}
 header nav .area{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden;margin:0 6px}
 header nav .area a{padding:3px 10px;margin:0}header nav a.on{color:var(--accent);font-weight:700}
-nav.sub{display:flex;gap:18px;justify-content:center;padding:10px 0;border-bottom:1px solid var(--line);background:var(--panel)}
+nav.sub{display:flex;gap:18px;justify-content:center;padding:8px 0;border-top:1px solid var(--line);background:var(--panel)}
 nav.sub a{color:var(--ink);text-decoration:none}nav.sub a.on{color:var(--accent);font-weight:700}
 .page{padding:28px 0 60px}.page h1{font-size:28px;margin:0 0 18px}
 .page h1,.page h2,.page h3,.page p,.page li,.toc,.toc a{text-align:left}
-.side{display:grid;grid-template-columns:220px 1fr;gap:28px}.toc{display:flex;flex-direction:column;gap:2px;position:sticky;top:70px;align-self:start}
+.side{display:grid;grid-template-columns:220px 1fr;gap:28px}.toc{display:flex;flex-direction:column;gap:2px;position:sticky;top:120px;align-self:start}
 .toc a{padding:7px 10px;border-radius:4px;color:var(--ink);text-decoration:none}.toc a:hover{background:var(--panel)}
-.sec{display:none}.sec:target{display:block}.secs:not(:has(.sec:target)) .sec:first-child{display:block}
+.sec{display:none}.anc{position:absolute;top:0;left:0}.secs{min-height:70vh}
 .secs h2,.sec1 h2{font-size:22px;margin:0 0 12px}.secs ul,.sec1 ul{padding-left:20px}.secs li{margin:3px 0}
 .secs table,.sec1 table{border-collapse:collapse;width:100%;margin:10px 0}.secs td,.secs th,.sec1 td,.sec1 th{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
 .prep{border:1px dashed var(--line);color:var(--dim);padding:26px;text-align:center;border-radius:4px;margin:10px 0}
@@ -99,8 +100,8 @@ nav.foot{margin:10px 0}nav.foot a{color:var(--dim)}
 <header><div class="wrap"><button class="mode" type="button" title="ダークモード" aria-label="ダークモード" onclick="var r=document.documentElement,t=r.getAttribute('data-theme')=='dark'?'light':'dark';r.setAttribute('data-theme',t);try{localStorage.setItem('hagah_theme',t)}catch(e){}">&#9680;</button>
 <img src="../../a/icon.png" alt=""><a class="brand" href="../../ja/">ハガ・ダバル</a>
 <nav><a href="../news/" class="on">소식</a><span class="area"><a href="../phone/">성경앱</a><a href="../shop/">쇼핑</a></span></nav>
-<details class="lang"><summary>日本語 &#9662;</summary><ul><li><a href="../../en/news/">English</a></li><li><a href="../../news/">한국어</a></li><li><a href="../../zh/news/">中文(简体)</a></li><li><a href="../../zht/news/">中文(繁體)</a></li><li><a href="../../ja/news/" class="on">日本語</a></li><li><a href="../../de/news/">Deutsch</a></li><li><a href="../../fr/news/">Français</a></li><li><a href="../../es/news/">Español</a></li><li><a href="../../ar/news/">العربية</a></li><li><a href="../../ru/news/">Русский</a></li><li><a href="../../pt/news/">Português</a></li></ul></details></div></header>
-
-<div class="page"><div class="wrap"><h1>소식</h1><div class="side"><nav class="toc"><a href="#notice">공지</a><a href="#updates">업데이트 이력</a><a href="#shopnews">쇼핑 알림</a></nav><div class="secs"><section class="sec" id="notice"><h2>공지</h2><div class="card upd" id="v6"><h3><small>2026-09-19</small></h3><b>(Announcement) Hayung, Hello</b><p>ㅅㄷㄴㅅ</p></div></section><section class="sec" id="updates"><h2>업데이트 이력</h2><p class="note">아직 글이 없습니다.</p></section><section class="sec" id="shopnews"><h2>쇼핑 알림</h2><p class="note">아직 글이 없습니다.</p></section></div></div></div></div>
+<details class="lang"><summary>日本語 &#9662;</summary><ul><li><a href="../../en/news/">English</a></li><li><a href="../../news/">한국어</a></li><li><a href="../../zh/news/">中文(简体)</a></li><li><a href="../../zht/news/">中文(繁體)</a></li><li><a href="../../ja/news/" class="on">日本語</a></li><li><a href="../../de/news/">Deutsch</a></li><li><a href="../../fr/news/">Français</a></li><li><a href="../../es/news/">Español</a></li><li><a href="../../ar/news/">العربية</a></li><li><a href="../../ru/news/">Русский</a></li><li><a href="../../pt/news/">Português</a></li></ul></details></div>
+</header>
+<div class="page"><div class="wrap"><h1>소식</h1><style>#notice:target~.side #sec-notice{display:block}#notice:target~.side .t-notice{background:var(--panel);color:var(--accent);font-weight:700}#updates:target~.side #sec-updates{display:block}#updates:target~.side .t-updates{background:var(--panel);color:var(--accent);font-weight:700}#shopnews:target~.side #sec-shopnews{display:block}#shopnews:target~.side .t-shopnews{background:var(--panel);color:var(--accent);font-weight:700}.page:not(:has(.anc:target)) #sec-notice{display:block}.page:not(:has(.anc:target)) .t-notice{background:var(--panel);color:var(--accent);font-weight:700}</style><i class="anc" id="notice"></i><i class="anc" id="updates"></i><i class="anc" id="shopnews"></i><div class="side"><nav class="toc"><a href="#notice" class="t-notice">공지</a><a href="#updates" class="t-updates">업데이트 이력</a><a href="#shopnews" class="t-shopnews">쇼핑 알림</a></nav><div class="secs"><section class="sec" id="sec-notice"><h2>공지</h2><div class="card upd" id="v6"><h3><small>2026-09-19</small></h3><b>(Announcement) Hayung, Hello</b><p>ㅅㄷㄴㅅ</p></div></section><section class="sec" id="sec-updates"><h2>업데이트 이력</h2><p class="note">아직 글이 없습니다.</p></section><section class="sec" id="sec-shopnews"><h2>쇼핑 알림</h2><p class="note">아직 글이 없습니다.</p></section></div></div></div></div>
 <div class="wrap"><nav class="foot"><a href="../#get">다운로드</a> · <a href="../news/">소식</a> · <a href="../help/">Q&amp;A</a> · <a href="../policy/">운영 정책</a> · <a href="../policy/#copyright">저작권</a></nav></div>
 </body></html>
