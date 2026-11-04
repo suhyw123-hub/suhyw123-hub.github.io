@@ -2,12 +2,12 @@
 <html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
-<title>하가 다바르 · 성경 묵상과 연구</title>
-<meta name="description" content="하가 다바르는 성경 본문과 구절 해설, 묵상플랜, 연결된 구절과 원어, 도서·설교집을 한 자리에서 읽는 개신교 성경 묵상 앱입니다. 폰에서도 PC에서도 같은 말씀을 이어서 읽습니다.">
+<title>아사 다바르 · 성경 묵상과 연구</title>
+<meta name="description" content="아사 다바르는 성경 본문과 구절 해설, 묵상플랜, 연결된 구절과 원어, 도서·설교집을 한 자리에서 읽는 개신교 성경 묵상 앱입니다. 폰에서도 PC에서도 같은 말씀을 이어서 읽습니다.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Hagah Dabar">
-<meta property="og:title" content="하가 다바르 · 성경 묵상과 연구">
-<meta property="og:description" content="하가 다바르는 성경 본문과 구절 해설, 묵상플랜, 연결된 구절과 원어, 도서·설교집을 한 자리에서 읽는 개신교 성경 묵상 앱입니다. 폰에서도 PC에서도 같은 말씀을 이어서 읽습니다.">
+<meta property="og:title" content="아사 다바르 · 성경 묵상과 연구">
+<meta property="og:description" content="아사 다바르는 성경 본문과 구절 해설, 묵상플랜, 연결된 구절과 원어, 도서·설교집을 한 자리에서 읽는 개신교 성경 묵상 앱입니다. 폰에서도 PC에서도 같은 말씀을 이어서 읽습니다.">
 <meta property="og:url" content="https://suhyw123-hub.github.io/">
 <meta property="og:image" content="https://suhyw123-hub.github.io/a/og.png">
 <meta property="og:image:width" content="512"><meta property="og:image:height" content="512">
@@ -34,9 +34,7 @@ nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--dim)
 .hero h1{font-size:40px;line-height:1.35;margin:0 0 18px;letter-spacing:-.01em}.hero p{color:var(--dim);font-size:18px;margin:0 0 28px}
 .btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 30px;text-decoration:none;font-weight:700;border-radius:2px;border:0;font:inherit}
 :root[data-theme=dark] .btn{color:#1b1916}
-.verse{margin:38px auto 0;max-width:640px;padding:22px 26px;background:var(--panel);border-left:4px solid var(--accent);text-align:left}
-.verse b{display:block;font-size:13px;color:var(--dim);font-weight:600;margin-bottom:6px}.verse q{font-size:19px}
-.verse cite{display:block;margin-top:8px;color:var(--dim);font-style:normal;font-size:14px}
+a.card.dl{text-decoration:none;color:var(--ink)}a.card.dl span{color:var(--accent);font-weight:700}
 section{padding:68px 0}section h2{font-size:28px;margin:0 0 14px;text-align:center}.lead{color:var(--dim);text-align:center;max-width:720px;margin:0 auto 34px}
 .name{max-width:760px;margin:auto}.name .heb{text-align:center;font-size:30px;color:var(--accent);margin:0 0 18px;direction:rtl;font-family:"SBL Hebrew","Ezra SIL","Times New Roman",serif}
 .name p{margin:0 0 14px}
@@ -75,32 +73,34 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--dim);font-siz
 .vids{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.vid{display:block;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:12px;color:var(--ink);text-decoration:none}
 .vid img{width:100%;border-radius:4px;display:block;margin-bottom:8px}.vid b{display:block}.vid p{color:var(--dim);margin:4px 0 0;font-size:14px}
 @media(max-width:860px){.vids{grid-template-columns:1fr}.step{flex-direction:column}}
+
+header nav .area{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden;margin:0 6px}
+header nav .area a{padding:3px 10px;margin:0}header nav a.on{color:var(--accent);font-weight:700}
+nav.sub{display:flex;gap:18px;justify-content:center;padding:10px 0;border-bottom:1px solid var(--line);background:var(--panel)}
+nav.sub a{color:var(--ink);text-decoration:none}nav.sub a.on{color:var(--accent);font-weight:700}
+.page{padding:28px 0 60px}.page h1{font-size:28px;margin:0 0 18px}
+.page h1,.page h2,.page h3,.page p,.page li,.toc,.toc a{text-align:left}
+.side{display:grid;grid-template-columns:220px 1fr;gap:28px}.toc{display:flex;flex-direction:column;gap:2px;position:sticky;top:70px;align-self:start}
+.toc a{padding:7px 10px;border-radius:4px;color:var(--ink);text-decoration:none}.toc a:hover{background:var(--panel)}
+.sec{display:none}.sec:target{display:block}.secs:not(:has(.sec:target)) .sec:first-child{display:block}
+.secs h2,.sec1 h2{font-size:22px;margin:0 0 12px}.secs ul,.sec1 ul{padding-left:20px}.secs li{margin:3px 0}
+.secs table,.sec1 table{border-collapse:collapse;width:100%;margin:10px 0}.secs td,.secs th,.sec1 td,.sec1 th{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.prep{border:1px dashed var(--line);color:var(--dim);padding:26px;text-align:center;border-radius:4px;margin:10px 0}
+figure.cap{margin:12px 0}figure.cap img{max-width:360px;width:100%;border:1px solid var(--line);border-radius:6px}
+.card.upd h3 small{color:var(--dim);font-weight:400;font-size:13px;margin-left:6px}.card.upd{margin:0 0 12px}
+nav.foot{margin:10px 0}nav.foot a{color:var(--dim)}
+.home ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.home li{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:16px;text-align:left}
+.home li a{text-decoration:none;color:var(--ink)}.home li b{display:block;font-size:18px;margin-bottom:4px;color:var(--accent)}
+.home p{text-align:left;max-width:760px;margin-left:auto;margin-right:auto}.home figure.cap{text-align:center}
+.hero p{margin-bottom:22px}
+@media(max-width:860px){.side{grid-template-columns:1fr}.toc{position:static;flex-direction:row;flex-wrap:wrap}}
 </style></head><body>
 <header><div class="wrap"><button class="mode" type="button" title="어두운 화면" aria-label="어두운 화면" onclick="var r=document.documentElement,t=r.getAttribute('data-theme')=='dark'?'light':'dark';r.setAttribute('data-theme',t);try{localStorage.setItem('hagah_theme',t)}catch(e){}">&#9680;</button>
-<img src="a/icon.png" alt=""><a class="brand" href="#top">하가 다바르</a>
-<nav><a href="#name">이름 이야기</a><a href="#sync">폰과 PC</a><a href="#feat">기능</a><a href="#shots">화면</a><a href="#ai">AI 안내</a><a href="#get">앱 받기</a><a href="#ask">문의</a><a href="magazine.html">이렇게 읽습니다</a></nav>
+<img src="a/icon.png" alt=""><a class="brand" href="./">아사 다바르</a>
+<nav><a href="news/">소식</a><span class="area"><a href="phone/">성경앱</a><a href="shop/">쇼핑</a></span></nav>
 <details class="lang"><summary>한국어 &#9662;</summary><ul><li><a href="en/">English</a></li><li><a href="" class="on">한국어</a></li><li><a href="zh/">中文(简体)</a></li><li><a href="zht/">中文(繁體)</a></li><li><a href="ja/">日本語</a></li><li><a href="de/">Deutsch</a></li><li><a href="fr/">Français</a></li><li><a href="es/">Español</a></li><li><a href="ar/">العربية</a></li><li><a href="ru/">Русский</a></li><li><a href="pt/">Português</a></li></ul></details></div></header>
-<div class="hero" id="top"><div class="wrap"><h1>말씀을 읽고, 묵상하고, 이어 보다</h1><p>하가 다바르는 성경 본문과 구절 해설, 묵상플랜, 연결된 구절과 원어, 도서·설교집을 한 자리에서 읽는 개신교 성경 묵상 앱입니다. 폰에서도 PC에서도 같은 말씀을 이어서 읽습니다.</p>
-<a class="btn" href="#get">앱 받기</a>
-<div class="verse"><b>오늘 마음에 둘 말씀</b><q>주의 말씀은 내 발에 등이요 내 길에 빛이니이다</q><cite>시편 119:105</cite></div></div></div>
-<section id="name"><div class="wrap name"><h2>「하가 다바르」라는 이름</h2><p class="heb">&#1492;&#1464;&#1490;&#1464;&#1492; &#183; &#1491;&#1468;&#1464;&#1489;&#1464;&#1512;</p>
-<p>하가는 히브리어로 「소리 내어 되뇌다, 나직이 읊조리다」라는 뜻입니다. 시편 1편의 「그 율법을 주야로 묵상하는도다」에서 「묵상하다」가 바로 이 낱말입니다. 같은 낱말이 사자가 먹이를 움키고 낮게 으르렁거리는 소리(사 31:4)와 비둘기가 구구 우는 소리(사 38:14)에도 쓰였습니다.</p><p>성경이 말하는 묵상은 머릿속 생각에 그치지 않습니다. 말씀을 입에 올려 거듭 되뇌며 마음에 새기는 일입니다.</p><p>다바르는 「말씀」입니다. 하나님께서 하신 말이면서 그 말씀이 이루는 일까지 함께 뜻하는 낱말입니다.</p><p>그래서 하가 다바르는 「말씀을 되뇌다」입니다. 바쁜 하루 중에도 말씀 한 구절을 입에 올리고, 시간이 날 때는 그 말씀을 깊이 파고들 수 있도록 이 앱을 만들었습니다.</p></div></section>
-<section style="padding-top:0"><div class="wrap"><div class="stats"><div class="stat"><b>13,875</b><span>구절 해설</span></div><div class="stat"><b>157</b><span>묵상플랜</span></div><div class="stat"><b>47</b><span>렌즈 묵상</span></div><div class="stat"><b>41</b><span>고전 도서·설교집</span></div><div class="stat"><b>23</b><span>성경 역본</span></div></div></div></section>
-<section id="sync"><div class="wrap"><h2>폰과 PC, 하나의 묵상</h2><p class="lead">두 앱은 따로 놀지 않습니다. 이동 중에 폰으로 시작한 묵상을 집에서 PC로 깊이 이어 갑니다.</p>
-<div class="sync"><div class="card"><h3>이동 중에는 폰으로</h3><p>출근길과 쉬는 시간에 오늘의 말씀과 묵상플랜 한 몫을 읽고, 떠오른 생각을 짧은 묵상노트로 남깁니다. 설교·기도·찬양 영상도 멈춘 곳에서 다시 이어 듣습니다.</p></div>
-<div class="card"><h3>집에서는 PC로 깊이</h3><p>넓은 화면에서 구절 연결과 말씀의 흐름, 주석과 원어, 고전 도서를 나란히 펼쳐 놓고 폰에서 남긴 노트를 다듬어 연구노트로 키웁니다.</p></div>
-<div class="card link"><h3>&#8644; 같은 와이파이에서 서로 이어집니다</h3><p>폰에서 쓴 노트와 즐겨찾기, 플랜 진행이 PC로 오고 PC에서 정리한 자료가 폰으로 갑니다. 집의 와이파이 안에서 두 기기가 직접 주고받을 뿐 인터넷 서버에 올리지 않습니다.</p></div></div></div></section>
-<section id="feat"><div class="wrap"><h2>이런 일을 합니다</h2><div class="set"><div class="txt"><h3>구절마다 쉬운 해설</h3><p>구절을 누르면 해설과 묵상질문, 묵상기도가 열립니다. 장과 단락의 흐름도 같은 자리에서 봅니다.</p></div><figure><img class="m" src="a/m/04_sheet_desc.png" alt="모바일" loading="lazy"><figcaption>모바일</figcaption></figure><figure><img class="p" src="a/pc/pc_desc.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div><div class="set"><div class="txt"><h3>뜻으로 이어진 구절</h3><p>한 구절이 성경 전체의 어느 구절과 이어지는지, 왜 이어지는지를 설명과 함께 보여 줍니다. 말씀의 흐름을 따라 창세기에서 요한계시록까지 걸어 봅니다.</p></div><figure><img class="m" src="a/m/05_sheet_links.png" alt="모바일" loading="lazy"><figcaption>모바일</figcaption></figure><figure><img class="p" src="a/pc/pc_flow.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div><div class="set"><div class="txt"><h3>주석과 원어</h3><p>여러 고전 주석을 오늘의 말로 옮겨 읽고, 히브리어·헬라어 낱말이 성경 어디에 다시 나오는지 찾아갑니다.</p></div><figure><img class="m" src="a/m/06e_sheet_lex.png" alt="모바일" loading="lazy"><figcaption>모바일</figcaption></figure><figure><img class="p" src="a/pc/pc_comm.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div><div class="set"><div class="txt"><h3>묵상플랜과 렌즈 묵상</h3><p>통독부터 주제 묵상까지 하루 몫을 정해 주고, 한 주제를 여러 각도에서 비추어 읽게 합니다.</p></div><figure><img class="m" src="a/m/13_plan_today_card.png" alt="모바일" loading="lazy"><figcaption>모바일</figcaption></figure></div><div class="set"><div class="txt"><h3>고전 도서와 설교집</h3><p>스펄전, 머레이, 바운즈 같은 신앙 고전을 오늘의 말로 옮겨 읽습니다.</p></div><figure><img class="m" src="a/m/17_reader.png" alt="모바일" loading="lazy"><figcaption>모바일</figcaption></figure><figure><img class="p" src="a/pc/pc_reading.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div><div class="set"><div class="txt"><h3>설교·기도·찬양 영상</h3><p>구절과 이어진 설교와 기도, 찬양을 언어별로 선택해 듣고 멈춘 곳에서 다시 이어 듣습니다.</p></div><figure><img class="m" src="a/m/25_youtube.png" alt="모바일" loading="lazy"><figcaption>모바일</figcaption></figure></div><div class="set"><div class="txt"><h3>AI 도우미</h3><p>내가 선택한 AI 에게 구절을 묻고, 여러 답을 한 글로 정리해 내 연구노트로 남깁니다.</p></div><figure><img class="m" src="a/m/22c_ai_final.png" alt="모바일" loading="lazy"><figcaption>모바일</figcaption></figure><figure><img class="p" src="a/pc/pc_ai.png" alt="PC" loading="lazy"><figcaption>PC</figcaption></figure></div></div></section>
-<section id="shots"><div class="wrap gal"><h2>화면 미리보기</h2>
-<input type="radio" name="g" id="gm" checked><input type="radio" name="g" id="gp">
-<div class="tabs"><label for="gm">모바일</label><label for="gp">PC</label></div>
-<div class="strip sm"><figure><img class="m" src="a/m/01_home.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="a/m/04_sheet_desc.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="a/m/05_sheet_links.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="a/m/06e_sheet_lex.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="a/m/14_lens_page.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="a/m/17_reader.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="a/m/25c_youtube_prayer.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="m" src="a/m/22c_ai_final.png" alt="" loading="lazy"><figcaption></figcaption></figure></div><div class="strip sp"><figure><img class="p" src="a/pc/pc_desc.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="a/pc/pc_flow.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="a/pc/pc_comm.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="a/pc/pc_reading.png" alt="" loading="lazy"><figcaption></figcaption></figure><figure><img class="p" src="a/pc/pc_ai.png" alt="" loading="lazy"><figcaption></figcaption></figure></div></div></section>
-<section id="ai"><div class="wrap"><h2>AI 도우미와 API 키</h2><p class="lead">AI 도우미는 내가 넣은 AI 회사의 키로 그 회사에 바로 묻습니다. 키는 폰에만 저장되고 우리 서버로 가지 않습니다. 구글 Gemini 무료 키를 받아 넣는 차례입니다.</p><ol class="steps"><li class="step"><div><b>1</b><h3>구글 계정으로 로그인</h3><p>구글 계정이 있으면 그대로 로그인합니다. 없으면 먼저 하나 만듭니다.</p></div></li><li class="step"><div><b>2</b><h3>AI Studio 에서 키 만들기</h3><p>브라우저에 https://aistudio.google.com/api-keys를 입력합니다.</p><p>[Create API key](API 키 만들기)를 누르면 긴 글자 한 줄이 나옵니다. </p><p>그것이 키입니다. 복사해 두세요.</p><p>다른 사람들에게 노출하지 마세요.</p></div></li><li class="step"><div><b>3</b><h3>앱 설정에 붙여 넣기</h3><p>발급받은 API 키를 앱에 저장하세요.</p><p>(Gemini API Key 예시)</p><p>방법 1 : AI Studio 에서 키 복사 → 앱 설정 화면(상단에 배치된 톱니바퀴 모양 아이콘) → [+ 계정] → AI 회사 선택 (예: Gemini) → 키 붙여 넣기 → [저장]</p><p>방법 2 : 앱에 표시된 AI 단추를 누르면 위와 같은 경로를 따라서 안내가 표시됩니다.</p></div></li><li class="step"><div><b>4</b><h3>키는 비밀번호처럼</h3><p>다른 사람에게 보여주거나 보내지 마세요. 만일, 외부에 새어 나갔다면, AI Studio 에서 기존의 키를 지우고 새로 발급 받으면 됩니다.</p><p>키는 사용자의 폰에만 저장됩니다. 앱은 사용자의 키를 전혀 수집하지 않으며, 앱 서버 또는 다른 일체의 외부에 보내지 않습니다. </p><p>AI 대화 질문은 사용자가 키를 입력한 AI 회사에게 곧바로 전송됩니다.</p></div></li><li class="step"><div><b>5</b><h3>무료 키의 한계</h3><p>무료 API 키는 AI 회사의 정책에 따라 하루 사용량이 정해져 있습니다.</p><p>일반적으로 AI 회사의 정책과 이용약관에 따라 사용자가 무료 키를 이용하여 보낸 글은 AI 회사의 서비스 개선에 사용될 수 있습니다. </p><p>구글은 만 18세 이상에게 키를 줍니다. </p><p>무료키를 제공하는지 여부는 AI회사의 정책에 따라 다릅니다.</p></div></li><li class="step"><div><b>6</b><h3>요금과 한도</h3><p>결제를 연결하지 않은 Gemini 무료 키는 하루 한도를 넘으면 멈출 뿐 요금이 나가지 않습니다. 유료 키를 쓴다면 그 회사 화면에서 월 지출 한도나 알림을 꼭 정하세요. 예산 설정이 알림만 하고 사용을 멈추지 못하면 안전하지 않을 수 있으니, 알림을 받으면 직접 키를 멈추세요. 앱도 키마다 하루 호출 수를 세어, 사용자가 정한 한도에 닿으면 계속할지 묻습니다.</p></div></li></ol></div></section>
-<section id="get"><div class="wrap"><h2>앱 받기</h2><div class="get"><div class="card"><b>안드로이드</b><span class="soon">준비 중</span></div><div class="card"><b>아이폰</b><span class="soon">준비 중</span></div><div class="card"><b>Windows PC</b><span class="soon">준비 중</span></div></div><p class="note">출시되면 이 자리에서 받으실 수 있습니다.</p></div></section>
-<section id="ask"><div class="wrap"><h2>문의하기</h2><p class="lead">앱 사용 중 궁금한 점이나 수정할 점을 보내 주세요. 답장은 적어 주신 메일로 드립니다.</p>
-<form onsubmit="return false"><label class="f">답장 받을 메일<input class="f" type="email" name="email" required></label>
-<label class="f">문의 내용<textarea name="body" required></textarea></label>
-<input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-<button class="btn" type="submit" disabled>보내기</button><p class="note">문의 접수는 곧 열립니다. 지금은 보내지지 않습니다.</p></form></div></section>
-<footer><div class="wrap"><h3>개인정보</h3><p>이 홈페이지와 앱은 방문 기록을 모으지 않습니다. 분석 도구, 광고 추적, 외부 글꼴을 쓰지 않습니다. 문의를 보내실 때 적으신 메일과 내용만 답장을 위해 보관합니다.</p><p>하가 다바르 · 성경 본문의 저작권은 각 역본의 권리자에게 있습니다.</p></div></footer>
+
+<div class="hero" id="top"><div class="wrap"><h1>말씀을 읽고, 묵상하고, 준행하다</h1><p>{{WEB\_APP\_NAME}}는 성경 본문과 해설, 묵상플랜, 원어, 주석, 연결구절, 도서·설교집 등을 한 자리에서 읽는 개신교 성경 묵상 앱입니다. 모바일 폰과 PC를 동기화하여 같은 말씀을 이어서 읽을 수 있습니다.</p><a class="btn" href="#get">앱 받기</a></div></div><section id="s2"><div class="wrap home"><h2>「{{WEB\_APP\_NAME}}」라는 이름</h2><p>하가는 히브리어로 「소리 내어 되뇌다, 나직이 읊조리다」라는 뜻입니다. 시편 1편의 「그 율법을 주야로 묵상하는도다」에서 「묵상하다」가 바로 이 낱말입니다. 같은 낱말이 사자가 먹이를 움키고 낮게 으르렁거리는 소리(사 31:4)와 비둘기가 구구 우는 소리(사 38:14)에도 쓰였습니다.</p><p>성경이 말하는 묵상은 머릿속 생각에 그치지 않습니다. 말씀을 입에 올려 거듭 되뇌며 마음에 새기는 일입니다.</p><p>다바르는 「말씀」입니다. 하나님께서 하신 말이면서 그 말씀이 이루는 일까지 함께 뜻하는 낱말입니다.</p><p>그래서 하가 다바르는 「말씀을 되뇌다」입니다. 바쁜 하루 중에도 말씀 한 구절을 입에 올리고, 시간이 날 때는 그 말씀을 깊이 파고들 수 있도록 이 앱을 만들었습니다.</p></div></section><section id="s3"><div class="wrap home"><h2>최근 소식</h2><p>\[\[자동:최근소식]]</p></div></section><section id="s4"><div class="wrap home"><h2>앱이 다루는 범위</h2><p>* <a href="phone/"><b>폰</b></a> 이동 중에 짧게 묵상합니다 * <a href="pc/"><b>PC</b></a> 넓은 화면에서 깊이 연구하고 폰과 동기화합니다 * <a href="shop/"><b>쇼핑</b></a> 한 앱 안의 따로 된 영역입니다 * <a href="pc/#s2"><b>사용자 모드</b></a> 앱 원본 위에 내 수정을 덮어 씁니다(원본은 그대로) * <b>다국어</b> 화면 글자와 자료를 언어별로 받습니다</p></div></section><section id="s5"><div class="wrap home"><h2>이렇게 활용해 보세요</h2><p>* <a href="use/#s1">아침 묵상 10분</a> * <a href="use/#s3">설교·성경공부 준비</a> * <a href="use/#s4">말씀 암송과 가족 녹음</a> * <a href="use/#s9">위로가 필요한 사람에게</a> \[\[움직임:verse\_flow]]</p></div></section><section id="get"><div class="wrap home"><h2>다운로드</h2><p>\[\[자동:다운로드]]</p></div></section>
+<div class="wrap"><nav class="foot"><a href="./#get">다운로드</a> · <a href="news/">소식</a> · <a href="help/">Q&amp;A</a> · <a href="policy/">운영 정책</a> · <a href="policy/#copyright">저작권</a></nav></div>
 </body></html>
